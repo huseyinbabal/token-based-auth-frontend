@@ -48,6 +48,7 @@ angular.module('angularRestfulAuth')
                 $rootScope.error = 'Failed to logout';
             });
         };
+        $scope.token = $localStorage.token;
     }])
 
 .controller('MeCtrl', ['$rootScope', '$scope', '$location', 'Main', function($rootScope, $scope, $location, Main) {

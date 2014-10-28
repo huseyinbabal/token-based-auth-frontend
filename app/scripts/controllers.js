@@ -13,7 +13,7 @@ angular.module('angularRestfulAuth')
 
             Main.signin(formData, function(res) {
                 if (res.type == false) {
-                    $rootScope.error = res.data;    
+                    alert(res.data)    
                 } else {
                     $localStorage.token = res.data.token;
                     $location.path('/me');    
@@ -31,7 +31,7 @@ angular.module('angularRestfulAuth')
 
             Main.save(formData, function(res) {
                 if (res.type == false) {
-                    $rootScope.error = res.data;
+                    alert(res.data)
                 } else {
                     $localStorage.token = res.data.token;
                     $location.path('/me');    

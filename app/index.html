@@ -11,6 +11,7 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/loading-bar.css">
 
     <style>
         body {
@@ -51,14 +52,6 @@
             </div><!--/.nav-collapse -->
         </div>
     </div>
-    <div class="row" data-ng-show="error">
-        <div class="col-lg-12">
-            <div class="alert alert-danger alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            {{error}}
-            </div>
-        </div>
-    </div>
     <div class="container" ng-view="">
 
     </div> <!-- /container -->
@@ -68,6 +61,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
 <script src="/lib/ngStorage.js"></script>
+<script src="/lib/loading-bar.js"></script>
 <script src="/scripts/app.js"></script>
 <script src="/scripts/controllers.js"></script>
 <script src="/scripts/services.js"></script>

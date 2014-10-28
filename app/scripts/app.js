@@ -2,7 +2,8 @@
 
 angular.module('angularRestfulAuth', [
     'ngStorage',
-    'ngRoute'
+    'ngRoute',
+    'angular-loading-bar'
 ])
 .config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpProvider) {
 

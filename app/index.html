@@ -51,7 +51,11 @@
             </div><!--/.nav-collapse -->
         </div>
     </div>
-
+    <div class="row" data-ng-show="error">
+        <div class="col-lg-12">
+            <div class="alert alert-danger" role="alert">${error}</div>
+        </div>
+    </div>
     <div class="container" ng-view="">
 
     </div> <!-- /container -->

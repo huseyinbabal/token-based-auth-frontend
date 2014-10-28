@@ -51,9 +51,9 @@ angular.module('angularRestfulAuth')
 
         $scope.logout = function() {
             Main.logout(function() {
-                $location.path('/');
+                window.location = "/"
             }, function() {
-                $rootScope.error = 'Failed to logout';
+                alert("Failed to logout!");
             });
         };
         $scope.token = $localStorage.token;

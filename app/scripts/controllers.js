@@ -16,7 +16,7 @@ angular.module('angularRestfulAuth')
                     alert(res.data)    
                 } else {
                     $localStorage.token = res.data.token;
-                    $location.path('/me');    
+                    window.location = "/";    
                 }
             }, function() {
                 $rootScope.error = 'Failed to signin';
@@ -34,7 +34,7 @@ angular.module('angularRestfulAuth')
                     alert(res.data)
                 } else {
                     $localStorage.token = res.data.token;
-                    $location.path('/me');    
+                    window.location = "/"    
                 }
             }, function() {
                 $rootScope.error = 'Failed to signup';
